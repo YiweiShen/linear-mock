@@ -1,7 +1,7 @@
 import { Container } from '@/components/container'
-import { Button } from '@/components/button'
 import { Hero, HeroTitle, HeroSubtitle } from '@/components/hero'
 import Image from 'next/image'
+import heroImage from '@/public/img/hero.jpeg'
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         </HeroSubtitle>
         <Image
           className="rounded-lg mx-auto"
-          src="/img/hero.jpeg"
+          src={heroImage}
           alt="Hero image"
           width={1024}
           height={720}
