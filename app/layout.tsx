@@ -22,7 +22,9 @@ export default function RootLayout({
         />
       </head>
       <Header />
-      <main className="pt-[var(--navigation-height)]">{children}</main>
+      <main className="bg-page-gradient pt-[var(--navigation-height)]">
+        {children}
+      </main>
       <Footer />
     </html>
   )
