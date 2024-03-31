@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', // <=== enables static exports
-  basePath: '/linear-mock',
-  reactStrictMode: true
+  distDir: 'out',
+  reactStrictMode: true,
+  swcMinify: true
 }
 
 export default nextConfig
