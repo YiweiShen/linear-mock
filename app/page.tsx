@@ -24,6 +24,7 @@ export default function Home() {
           Meet the new standard for modern software development.
           <br /> Streamline issues, sprints, and product roadmaps.
         </HeroSubtitle>
+
         <Button
           className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]"
           href="/"
@@ -39,6 +40,13 @@ export default function Home() {
           width={1024}
           height={720}
         />
+        <HeroSubtitle>
+          Powering the world’s best product teams.
+          <br />{' '}
+          <span style={{ color: 'white' }}>
+            From next-gen startups to established enterprises.
+          </span>
+        </HeroSubtitle>
       </Hero>
     </Container>
   )
