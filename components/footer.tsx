@@ -71,10 +71,13 @@ export const Footer = () => {
     <footer className="bottom-0 left-0 z-10 w-full border-t mt-16 mb-auto border-transparent-white backdrop-blur-[12px]">
       <Container className="flex mt-16 mb-16">
         <div className="max-w-[120rem] mx-auto grid grid-cols-2 md:grid-cols-6 gap-8">
-          <div className="text-md text-gray md:col-span-2 flex">
+          <div className="text-md text-gray md:col-span-2 flex items-start">
             <Logo className="w-[1.8rem] h-[1.8rem] mr-4" />
-            <span>Linear - Designed Worldwide</span>
+            <span style={{ position: 'relative', bottom: '0.3rem' }}>
+              Linear - Designed Worldwide
+            </span>
           </div>
+
           {footerLinks.map((footerLink) => (
             <FooterLinkList
               key={footerLink.title}
