@@ -28,6 +28,16 @@ export const Header = () => {
     }
   }, [setIsHamburgerMenuOpen])
 
+  const headerLinks = [
+    { href: '/features', text: 'Features' },
+    { href: '/method', text: 'Method' },
+    { href: '/customers', text: 'Customers' },
+    { href: '/changelog', text: 'Changelog' },
+    { href: '/pricing', text: 'Pricing' },
+    { href: '/company', text: 'Company' },
+    { href: '/contact', text: 'Contact' }
+  ]
+
   return (
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
@@ -55,47 +65,27 @@ export const Header = () => {
                 isHamburgerMenuOpen && '[&_a]:translate-y-0'
               )}
             >
-              <li>
-                <Link href="/features" className="hover:text-gray">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="/method" className="hover:text-gray">
-                  Method
-                </Link>
-              </li>
-              <li>
-                <Link href="/customers" className="hover:text-gray">
-                  Customers
-                </Link>
-              </li>
-              <li>
-                <Link href="/changelog" className="hover:text-gray">
-                  Changelog
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing" className="hover:text-gray">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/company" className="hover:text-gray">
-                  Company
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-gray">
-                  Contact
-                </Link>
-              </li>
+              {headerLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    prefetch={false}
+                    href={link.href}
+                    className="hover:text-gray"
+                  >
+                    {link.text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
 
         <div className="ml-auto h-full flex items-center">
-          <Link href="/login" className="text-sm mr-6 hover:text-gray">
+          <Link
+            prefetch={false}
+            href="/login"
+            className="text-sm mr-6 hover:text-gray"
+          >
             Log in
           </Link>
           <Button href="/signup">Sign up</Button>

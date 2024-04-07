@@ -37,6 +37,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <Link
+      prefetch={false}
       className={classNames(buttonClasses({ variant, size }), className)}
       href={href}
     >

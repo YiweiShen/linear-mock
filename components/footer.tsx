@@ -1,4 +1,5 @@
 import { Logo } from './icons/logo'
+import Link from 'next/link'
 import { Container } from './container'
 
 const FooterLinkList = ({
@@ -13,7 +14,9 @@ const FooterLinkList = ({
     <ul className="text-sm text-gray space-y-3">
       {links.map((link) => (
         <li key={link.href}>
-          <a href={link.href}>{link.text}</a>
+          <Link prefetch={false} href={link.href}>
+            {link.text}
+          </Link>
         </li>
       ))}
     </ul>
