@@ -39,7 +39,6 @@ export default function Home() {
           src={heroImage}
           alt="Hero image"
           width={1024}
-          height={720}
         />
         <HeroSubtitle className="pt-36">
           Powering the world’s best product teams.
