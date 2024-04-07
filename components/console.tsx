@@ -14,7 +14,10 @@ Build products better
 WE'RE HIRING: https://linear.app/readme
 CHANGELOG:    https://linear.app/changelog`
 
-console.log(message)
+console.log(
+  '%c' + message,
+  'font-family: Courier; height: 100vh; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12px; font-weight: 200; line-height: 14px;'
+)
 
 export const ConsoleMessage = () => {
   return <div></div>
