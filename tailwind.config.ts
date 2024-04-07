@@ -27,6 +27,8 @@ const config: Config = {
       sm: '1.4rem',
       md: '1.6rem',
       lg: ['2.2rem', '1.2'],
+      '3xl': '4.8rem',
+      '4xl': ['6.4rem', '1'],
       '5xl': ['8rem', '1']
     },
     colors: {
@@ -54,6 +56,8 @@ const config: Config = {
       10: '4.0rem',
       12: '4.8rem',
       16: '6.4rem',
+      36: '14.4rem',
+      72: '28.8rem',
       'navigation-height': 'var(--navigation-height)'
     },
     backgroundImage: {
