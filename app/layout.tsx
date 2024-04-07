@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { ConsoleMessage } from '@/components/console'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
@@ -15,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ConsoleMessage />
       <head>
         <meta
           name="viewport"
