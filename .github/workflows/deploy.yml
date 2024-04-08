@@ -5,12 +5,9 @@
 name: Deploy
 
 on:
-  # Runs on Build is completed
-  workflow_run:
-    workflows: ['Test']
-    branches: [main]
-    types:
-      - completed
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ['main']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,7 +25,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+  test:
+    uses: ./.github/workflows/test.yml
   deploy:
+    needs: test
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
