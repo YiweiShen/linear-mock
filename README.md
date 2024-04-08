@@ -1,4 +1,4 @@
-[![Build](https://github.com/YiweiShen/linear-mock/actions/workflows/build.yml/badge.svg)](https://github.com/YiweiShen/linear-mock/actions/workflows/build.yml) [![Test](https://github.com/YiweiShen/linear-mock/actions/workflows/test.yml/badge.svg)](https://github.com/YiweiShen/linear-mock/actions/workflows/test.yml) [![Deploy](https://github.com/YiweiShen/linear-mock/actions/workflows/deploy.yml/badge.svg)](https://github.com/YiweiShen/linear-mock/actions/workflows/deploy.yml)
+[![Build](https://github.com/YiweiShen/linear-mock/actions/workflows/build.yml/badge.svg?event=pull_request)](https://github.com/YiweiShen/linear-mock/actions/workflows/build.yml) [![Test](https://github.com/YiweiShen/linear-mock/actions/workflows/test.yml/badge.svg?event=pull_request)](https://github.com/YiweiShen/linear-mock/actions/workflows/test.yml) [![Deploy](https://github.com/YiweiShen/linear-mock/actions/workflows/deploy.yml/badge.svg)](https://github.com/YiweiShen/linear-mock/actions/workflows/deploy.yml)
 
 This is a [Next.js](https://nextjs.org/) project.
 
