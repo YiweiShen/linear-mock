@@ -111,7 +111,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Run tests
-        run: ${{ steps.detect-package-manager.outputs.runner }} test
+        run: ${{ steps.detect-package-manager.outputs.manager }} test
 
   # Deployment job
   deploy:
