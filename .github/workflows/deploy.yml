@@ -30,7 +30,7 @@ jobs:
   test:
     uses: ./.github/workflows/test.yml
   deploy:
-    needs: test
+    needs: [build, test]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
